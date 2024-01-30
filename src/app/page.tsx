@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-xl text-center font-semibold">Hello, world!</h1>
-    </main>
+    <section className="min-h-[inherit] h-auto flex flex-col justify-center items-center">
+      <h1 className="text-xl font-semibold">Welcome to Coursera</h1>
+    </section>
   );
 }
