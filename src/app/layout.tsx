@@ -1,6 +1,6 @@
 import { Footer } from "@/custom-components/Footer";
 import "./globals.css";
-import { Navbar } from "@/custom-components/Navbar";
+import { Header } from "@/custom-components/Header";
 
 export default function RootLayout({
   children,
@@ -10,9 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col justify-between p-4">
-        <header>
-          <Navbar />
-        </header>
+        <Header />
         {children}
         <footer>
           <Footer />
