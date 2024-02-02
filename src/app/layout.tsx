@@ -1,3 +1,4 @@
+import { Footer } from "@/custom-components/Footer";
 import "./globals.css";
 import { Navbar } from "@/custom-components/Navbar";
 
@@ -8,13 +9,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen">
-        <div className="min-h-[inherit] h-full">
-          <header>
-            <Navbar />
-          </header>
-          {children}
-        </div>
+      <body className="min-h-screen flex flex-col justify-between p-4">
+        <header>
+          <Navbar />
+        </header>
+        {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
